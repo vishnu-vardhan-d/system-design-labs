@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/systemdesignlabs
+    username: systemdesignlabs
+    password: systemdesignlabs
+  flyway:
+    table: flyway_history_url_shortener
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate

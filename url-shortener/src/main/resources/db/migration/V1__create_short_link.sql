@@ -1,0 +1,8 @@
+CREATE SEQUENCE short_link_id_seq START WITH 1000000 CACHE 1000;
+
+CREATE TABLE short_link (
+  id          NUMBER(19)      PRIMARY KEY,
+  code        VARCHAR2(10)    NOT NULL UNIQUE,
+  long_url    VARCHAR2(2048)  NOT NULL,
+  created_at  TIMESTAMP       DEFAULT SYSTIMESTAMP NOT NULL
+);

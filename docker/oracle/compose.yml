@@ -1,0 +1,14 @@
+services:
+  oracle:
+    image: container-registry.oracle.com/database/free:latest
+    container_name: system-design-labs-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PWD: oracle
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./startup:/opt/oracle/scripts/startup
+
+volumes:
+  oracle-data:

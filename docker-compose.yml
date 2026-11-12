@@ -1,0 +1,4 @@
+name: system-design-labs
+
+include:
+  - docker/oracle/compose.yml
