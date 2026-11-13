@@ -18,7 +18,6 @@ public class Base62 {
         	
         } while (n > 0);
         
-        System.out.println("code.reverse(): "+code.reverse());
         return code.reverse().toString();
     }
 
