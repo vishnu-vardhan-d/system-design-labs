@@ -50,6 +50,7 @@ public class UrlShortenerController {
 
 	@GetMapping("/*")
 	ResponseEntity<Void> redirect(HttpServletRequest request) {
+		
 
 		String code = request.getRequestURI().substring(1);
 
@@ -58,6 +59,7 @@ public class UrlShortenerController {
 		if (longUrls.isEmpty()) {
 			return ResponseEntity.notFound().build();
 		}
+		System.out.println(">>> redirect request reached server for code: " + code);
 		return ResponseEntity.status(HttpStatus.FOUND).location(URI.create(longUrls.get(0))).build();
 
 	}
