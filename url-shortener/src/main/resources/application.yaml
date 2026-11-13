@@ -8,8 +8,5 @@ spring:
     password: systemdesignlabs
   flyway:
     table: flyway_history_url_shortener
-  jpa:
-    open-in-view: false
-    show-sql: true
-    hibernate:
-      ddl-auto: validate
+
+short-link-base-url: http://localhost:8081/
