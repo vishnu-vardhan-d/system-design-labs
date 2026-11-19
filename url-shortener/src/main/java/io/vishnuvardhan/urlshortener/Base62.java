@@ -6,6 +6,9 @@ public class Base62 {
 	
 	static String encode(long n) {
         StringBuilder code = new StringBuilder();
+        
+        System.out.println("Hello World");
+        
         do {
         System.out.println("--------------BEGIN--------------------- ");
         	int remainder = (int) (n%62);

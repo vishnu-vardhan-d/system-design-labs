@@ -17,3 +17,4 @@ Oracle: `localhost:1521`, service `systemdesignlabs`, user `systemdesignlabs` / 
 | System | Module | Port |
 |---|---|---|
 | URL Shortener | `url-shortener` | 8081 |
+| Tool Usage Limit | `tool-usage-limit` | 8082 |
